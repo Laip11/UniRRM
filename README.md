@@ -125,7 +125,7 @@ unirrm/
 
 ## ⚙️ Environment Setup
 
-This project uses two conda environments: one for SFT training and one for RL training and evaluation.
+This project uses two conda environments: one for SFT training and one for RL training, evaluation, and inference.
 
 ### 1. SFT Training Environment (`llama-factory`)
 
@@ -137,7 +137,7 @@ cd LLaMA-Factory
 pip install -e ".[torch,deepspeed]"
 ```
 
-### 2. RL Training and Evaluation Environment (`verl`)
+### 2. RL Training, Evaluation, and Inference Environment (`verl`)
 
 ```bash
 conda create -n verl python=3.12 -y
@@ -151,6 +151,8 @@ pip install verl==0.5.0
 pip install datasets==4.4.1
 pip install accelerate==1.12.0
 ```
+
+The inference environment is based on the `verl` training environment because UniRRM inference only depends on vLLM and the standard model/tokenizer stack.
 
 ## 🚀 Quick Start
 
