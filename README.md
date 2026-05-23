@@ -274,7 +274,6 @@ The model returns structured JSON with:
 - `evaluations`: Per-response scores and explanations
 - `best_id`: The winning response ID
 
-> 💡 **Tip**: For more usage examples and model details, visit the [UniRRM-8B Hugging Face page](https://huggingface.co/SUSTech-NLP/UniRRM-8B).
 
 ## 📊 Evaluation
 
