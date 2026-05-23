@@ -284,6 +284,8 @@ Use the scripts under [`evaluation/script/`](evaluation/script/) to run inferenc
 - [`run_eval_list_wise.sh`](evaluation/script/run_eval_list_wise.sh) — Listwise evaluation on RewardBench v2 (4-response ranking)
 - [`run_eval_pointwise_on_pair_benchmark.sh`](evaluation/script/run_eval_pointwise_on_pair_benchmark.sh) — Pointwise scoring on pairwise benchmarks
 
+See [`evaluation/README.md`](evaluation/README.md) for detailed usage, supported reward types, template registration, dataset formatting, and output paths.
+
 To evaluate other reward models or datasets, update the evaluation configuration in the following places:
 
 - [`evaluation/src/templates/`](evaluation/src/templates/) — Add a model-specific `EvalPromptTemplate` with the required `system_template_*` and `user_template_*` fields, choose the matching answer extractor for the model output format, and register it in `TEMPLATE_REGISTRY` in [`evaluation/src/templates/__init__.py`](evaluation/src/templates/__init__.py).
