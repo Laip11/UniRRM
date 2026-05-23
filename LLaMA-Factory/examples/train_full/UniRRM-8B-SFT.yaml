@@ -1,0 +1,41 @@
+### model
+model_name_or_path: Qwen/Qwen3-8B
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+flash_attn: fa2
+deepspeed: LLaMA-Factory/examples/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: UniRRM-SFT
+neat_packing: True
+template: empty
+# cutoff_len: 8192
+cutoff_len: 16384
+overwrite_cache: true
+preprocessing_num_workers: 16
+dataloader_num_workers: 0
+
+### output
+output_dir: ./saves/UniRRM-8B-SFT
+logging_steps: 1
+save_strategy: epoch
+save_steps: null  # optional; can be omitted
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+report_to: none  # choices: [none, wandb, tensorboard, swanlab, mlflow]
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-5
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null

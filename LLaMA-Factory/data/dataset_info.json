@@ -1,0 +1,9 @@
+{
+  "UniRRM-SFT": {
+    "hf_hub_url": "SUSTech-NLP/UniRRM-SFT",
+    "columns": {
+      "prompt": "sft_prompt",
+      "response": "sft_response"
+    }
+  }
+}
