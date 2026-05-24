@@ -102,6 +102,8 @@ UniRRM also generalizes effectively to **pointwise evaluation** (unseen during t
   </tbody>
 </table>
 
+> **Note on listwise results (RWBench2):** The **RWBench2 (Listwise)** scores in the table above were obtained with the **original RewardBench evaluation code**, not the unified pipeline in this repository (`evaluation/`). The two implementations handle invalid or unparseable model outputs differently: in **this repo**, any sample that fails to generate or parse correctly is counted as **incorrect**; in the **original RewardBench** script, such cases are treated as **0.5** (partial credit). When reproducing listwise numbers with the scripts here, expect scores to differ from those reported above.
+
 ## 📁 Project Structure
 
 ```
