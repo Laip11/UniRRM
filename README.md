@@ -328,8 +328,6 @@ bash train_scripts/train_unirrm-8b.sh
 > **Important**: Before running RL training, configure the reward server in `reward_part/reward_server.py`:
 > - Set `URL` to your LLM API endpoint (for rubric quality evaluation)
 > - Set `API_KEY` to your API key
-> - Set `SFT_Model` in the training script to your SFT checkpoint path
-
 
 
 ## 📝 Citation
