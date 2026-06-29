@@ -335,11 +335,13 @@ bash train_scripts/train_unirrm-8b.sh
 If you find this project useful, please cite:
 
 ```bibtex
-@inproceedings{lai2026unirrm,
-  title={UniRRM: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms},
-  author={Lai, Peng and Du, Yichao and Wu, Juchao and Yue, Linan and Gao, Weibo and Wang, Longyue and Luo, Weihua and Wong, Derek F. and Chen, Guanhua},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2026}
+@inproceedings{
+lai2026unirrm,
+title={Uni{RRM}: Unified Reasoning Reward Models Across Languages and Evaluation Paradigms},
+author={Peng Lai and Yichao Du and Junchao Wu and Weibo Gao and Linan Yue and Longyue Wang and Weihua Luo and Derek F. Wong and Guanhua Chen},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=laiK6TlhL2}
 }
 ```
 
